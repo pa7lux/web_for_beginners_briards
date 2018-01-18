@@ -1,0 +1,6 @@
+/* Подключу ресет  */
+@import url(reset.css);
+
+body {
+	background: red;
+}
