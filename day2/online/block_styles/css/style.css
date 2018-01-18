@@ -1,0 +1,28 @@
+@import url(reset.css);
+
+.size {
+	height: 200px;
+	width: 300px;
+	background: red;
+}
+
+.color {
+	height: 200px;
+	width: 600px;
+	background-color: pink;
+}
+
+.image {
+	height: 900px;
+	width: 900px;
+	background-image: url(../img/pattern.png);
+	background-repeat: repeat; /* no-repeat repeat-x repeat-y */
+}
+
+.border {
+	height: 900px;
+	width: 900px;
+	border: 5px double navy;
+	background-image: url(../img/moon.jpg);
+	background-size: contain;
+}
