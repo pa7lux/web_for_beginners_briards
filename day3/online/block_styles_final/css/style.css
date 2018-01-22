@@ -1,0 +1,61 @@
+@import url(reset.css);
+.page {
+	/*width: 1000px;*/
+}
+.myHeader {
+	height: 500px;
+	background-image: url(../img/tela.png);
+	background-size: cover;
+	background-position: center;
+	/*background-attachment: fixed;*/
+}
+
+.first {
+	width: 200px;
+}
+
+.second {
+	width: 60%;
+}
+
+.third {
+	width: 90vw;
+	height: 30vh;
+	background-color: lightblue;
+}
+
+.fourth {
+	background-color: lightgreen;
+	width: 30vmin;
+}
+
+
+
+.five {
+	background-color: yellow;
+	width: 30vmax;
+}
+
+.six {
+	min-height: 10px;
+	background-color: grey;
+}
+
+.seven {
+	max-width: 600px;
+	background-color: orange;
+}
+
+.eight {
+	min-width: 1000px;
+	background-color: blue;
+}
+
+.square {
+	width: 500px;
+	height: 500px;
+	background-color: navy;
+	border-radius: 50%;
+	background-image: url(https://i.ytimg.com/vi/0SsEtjzPBh8/maxresdefault.jpg);
+	background-position: center;
+}
