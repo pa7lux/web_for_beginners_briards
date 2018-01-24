@@ -1,0 +1,56 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@font-face {
+	src: url(../font/BigStem-Regular.ttf);
+	font-family: headinfont;
+}
+body {
+	background-color: black;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+}
+
+h1, h2 {
+	font-family: headinfont;
+}
+
+h1 {
+	font-size: 50px;
+	text-align: center;
+	line-height: 30vh;
+}
+
+h2 {
+	font-size: 40px;
+	line-height: 80px;
+}
+
+p, li {
+	line-height: 50px;
+}
+
+a {
+	color: red;
+	text-decoration: none;
+}
+
+.mainHeader {
+	height: 30vh;
+	background-image: url(../img/header-bg.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.hero {
+	height: 60vh;
+}
+
+.content {
+	text-align: center;
+}
+
+.mainFooter {
+	height: 10vh;
+	text-align: center;
+}
