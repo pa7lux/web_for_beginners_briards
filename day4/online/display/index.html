@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Display</title>
+	<link rel="stylesheet" href="reset.css">
+	<style>
+		.redBlock {
+			height: 200px;
+			background-image: linear-gradient(to right, red, green);
+			width: 30vw;
+			display: inline-block;
+			font-size: 30px;
+		}
+		.greenBlock {
+			height: 200px;
+			background-image: linear-gradient(to right, green, blue);
+			width: 30vw;
+			display: inline-block;
+			font-size: 50px;
+		}
+		a {
+			width: 500px;
+			display: block;
+			font-size: 16px;
+		}
+
+		img {
+			width: 40vw;
+			display: block;
+		}
+		.columns {
+			font-size: 0;
+			height: 500px;
+		}
+		.column {
+			width: 50%;
+			height: 200px;
+			background-color: green;
+			display: inline-block;
+			font-size: 20px;
+			vertical-align: top;
+		}
+		.column.right {
+			font-size: 50px;
+			background-color: lightblue;
+		}
+		#ya {
+			/*display: none;*/
+		}
+	</style>
+</head>
+<body>
+	<!-- написал в одну строчку, чтобы убрать пробел-->
+	<div class="redBlock">Привет</div><div class="greenBlock">Hello</div>
+	<a href="http://ya.ru">Yandex</a>
+	<a href="http://google.com">Google</a>
+	<img src="https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg" alt="">
+	<img id="ya" src="http://forum.domdara.com/uploads/gallery/gallery/album_9/gallery_21_9_6985.png" alt="">
+
+	<div class="columns">
+		<div class="column left">Текст1</div>
+		<div class="column right">Текст2</div>
+	</div>
+</body>
+</html>

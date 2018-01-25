@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selectors</title>
+	<style>
+		p {
+			color: navy;
+		}
+
+		.mycoolDiv {
+			background-color: yellow;
+		}
+		#secondLorem {
+			text-transform: uppercase;
+		}
+		.mycoolDiv p {
+			color: green;
+		}
+		
+		.mycoolDiv #secondLorem {
+			color: purple;
+		}
+
+		.red {
+			width: 200px;
+			height: 20px;
+			background-color: red;
+		}
+		button.red {
+			height: 50px;
+		}
+
+		#secondLorem, button {
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="page">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odit est velit, alias voluptatem, asperiores, ab unde dolorem quae incidunt officiis dolores cum beatae nesciunt! Assumenda laudantium fuga, inventore voluptates?</p>
+		<section class="content">
+			<div class="mycoolDiv">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere assumenda ut officia, modi molestiae, eos facilis, consequuntur, tempora unde quo rem deserunt repellat minima nam culpa. Maxime minus fugiat, ullam.</p>
+				<p id="secondLorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nihil accusantium, tempore harum, molestias molestiae. Aliquam quasi nesciunt laudantium optio dolores accusamus, expedita autem! Officiis, placeat, necessitatibus. Atque, velit, saepe.</p>
+			</div>
+		</section>
+		<div class="red"></div>
+		<button class="red">Привет</button>
+		<button>Купить</button>
+	</div>
+</body>
+</html>
