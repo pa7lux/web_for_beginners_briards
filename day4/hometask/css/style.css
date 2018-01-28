@@ -1,0 +1,89 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.page {
+	font-family: 'Open Sans', sans-serif;
+	min-width: 1024px;
+}
+h1, h2 {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 50px;
+}
+
+h1 {
+	font-size: 5vh;
+}
+.header {
+	min-height: 5vh;
+	background-color: blue;
+	color: white;
+}
+
+.header-columns {
+	font-size: 0;
+}
+
+
+
+.header-column {
+	display: inline-block;
+	font-size: 16px;
+	height: 5vh;
+}
+
+.header-column.left {
+	width: 70%;
+}
+
+.header-column.right {
+	width: 30%;
+}
+
+.header-column.right a {
+	color: white;
+	text-decoration: none;
+	line-height: 5vh;
+	display: inline-block;
+	min-width: 80px;
+	text-align: center;
+}
+
+.content {
+	min-height: 90vh;
+	background-color: lightgrey;
+}
+
+.content-columns {
+	font-size: 0;
+}
+
+.content-column {
+	display: inline-block;
+	font-size: 16px;
+	vertical-align: top;
+}
+
+.content-column.left {
+	width: 20%;
+	background-color: black;
+	min-height: 300px;
+}
+
+.content-column.left a {
+	color:white;
+	text-decoration: none;
+	display: block;
+	line-height: 50px;
+}
+
+.content-column.right {
+	width: 80%;
+	min-height: 600px;
+	background-color: white;
+}
+
+.footer {
+	height: 5vh;
+	background-color: blue;
+}
