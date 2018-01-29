@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Box-sizing margins & paddings</title>
+	<link rel="stylesheet" href="reset.css">
+	<style>
+		.first {
+			width: 500px;
+			height: 500px;
+			background-color: red;
+			border: 5px solid black;
+			box-sizing: border-box;
+			margin: 50px auto 30px;
+		}
+		.inner {
+			width: 50px;
+			height: 50px;
+			background-color: blue;
+			margin-left: 20px;
+			margin-top: 50px;
+			margin-right: 30px;
+			margin-bottom: 50px;
+		}
+		.second {
+			width: 500px;
+			height: 500px;
+			background-color: green;
+		}
+		.line {
+			height: 100px;
+			background-color: black;
+		}
+		.second-inner {
+			width: 50px;
+			height: 50px;
+			background-color: yellow;
+			margin: 50px;
+		}
+
+		.third {
+			width: 200px;
+			height: 200px;
+			background-color: lightblue;
+			box-sizing: border-box;
+			/*padding-top: 20px;
+			padding-left: 30px;*/
+			padding: 10px;	
+		}
+	</style>
+</head>
+<body>
+	<div class="first">
+		<div class="inner"></div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem dolore excepturi quas voluptatum dolor itaque dolorum nihil, quam ea, sequi minima sapiente inventore non quisquam sint, placeat beatae nemo possimus!</p>
+	</div>
+
+	<div class="second">
+		<div class="line">
+			
+		</div>
+		<div class="second-inner">
+			
+		</div>
+	</div>
+
+	<div class="third">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima vel, incidunt non impedit laboriosam praesentium perspiciatis et assumenda ut quos placeat voluptatem suscipit est, nisi, accusantium animi sunt dolores tempora!
+	</div>
+</body>
+</html>

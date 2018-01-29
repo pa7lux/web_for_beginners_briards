@@ -78,9 +78,11 @@ h1 {
 }
 
 .content-column.right {
-	width: 80%;
+	width: 78%;
 	min-height: 600px;
 	background-color: white;
+	margin-left: 1%;
+	margin-right: 1%;
 }
 
 .footer {

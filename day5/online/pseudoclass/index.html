@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pseudoclasses</title>
+	<style>
+		a {
+			text-decoration: none;
+		}
+		#linked:link {
+			color: red;
+		}
+		#visited:visited {
+			color: green;
+		}
+		#hover:hover {
+			color: grey;
+			text-decoration: underline;
+		}
+		#active:active {
+			text-transform: uppercase;
+			background-color: yellow;
+		}
+		.hover-test {
+			width: 100px;
+			height: 100px;
+			background-color: orange;
+		}
+		.hover-test:hover {
+			background-color: darkred;
+			width: 120px;
+			height: 120px;
+		}
+
+		.text div:first-of-type {
+			color: navy;
+		}
+
+		.text div:last-of-type {
+			color: orange;
+		}
+
+		.text div:nth-of-type(4) {
+			color: green;
+		} 
+
+		.text-one div:last-child {
+			color: red;
+		}
+
+		input[type="text"] {
+			border: 1px solid black;
+		}
+
+		input[type="password"] {
+			border: 1px solid red;
+		}
+
+		input:focus {
+			outline-color: green;
+		}
+	</style>
+</head>
+<body>
+	<!-- LoVeHAte -->
+	<a href="#" id="linked">Link</a>
+	<a href="#" id="visited">Visited</a>
+	<a href="#" id="hover">Hover</a>
+	<a href="#" id="active">Active</a>
+	<div class="hover-test"></div>
+
+	<div class="text">
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit porro harum delectus veritatis, consequatur molestiae, eius iste quas quos aspernatur ipsam similique pariatur, neque cum laborum iure hic debitis quis.</div>
+		<div>Molestias natus dicta, facilis. Illo, explicabo officia molestias. Iusto temporibus voluptatem sit enim recusandae delectus, magnam, rerum quo perspiciatis esse adipisci excepturi eveniet rem dolores officiis quaerat explicabo quas repellat!</div>
+		<div>Iste perspiciatis dolorum magnam aut debitis ab, sapiente recusandae. Impedit deserunt, voluptas, autem commodi facilis eos. Quod ratione eaque vero error molestias itaque saepe at dolorem nesciunt, aspernatur optio laudantium!</div>
+		<div>Error illum repellat obcaecati atque praesentium suscipit, consequuntur at, autem officia deserunt, ut amet dolorem odio beatae. Necessitatibus numquam ratione nam, odit, possimus voluptatum, molestias dolor eos ab illum minus.</div>
+		<div>Vitae dolor iste laborum illo eius mollitia corporis, saepe eaque esse sequi debitis, numquam eum facilis sint natus fugit ad animi ipsa repudiandae voluptates reprehenderit fugiat aperiam itaque cupiditate. Assumenda?</div>
+	</div>
+	<div class="text-one">
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit porro harum delectus veritatis, consequatur molestiae, eius iste quas quos aspernatur ipsam similique pariatur, neque cum laborum iure hic debitis quis.</div>
+		<div>Molestias natus dicta, facilis. Illo, explicabo officia molestias. Iusto temporibus voluptatem sit enim recusandae delectus, magnam, rerum quo perspiciatis esse adipisci excepturi eveniet rem dolores officiis quaerat explicabo quas repellat!</div>
+		<div>Iste perspiciatis dolorum magnam aut debitis ab, sapiente recusandae. Impedit deserunt, voluptas, autem commodi facilis eos. Quod ratione eaque vero error molestias itaque saepe at dolorem nesciunt, aspernatur optio laudantium!</div>
+		<div>Error illum repellat obcaecati atque praesentium suscipit, consequuntur at, autem officia deserunt, ut amet dolorem odio beatae. Necessitatibus numquam ratione nam, odit, possimus voluptatum, molestias dolor eos ab illum minus.</div>
+		<div>Vitae dolor iste laborum illo eius mollitia corporis, saepe eaque esse sequi debitis, numquam eum facilis sint natus fugit ad animi ipsa repudiandae voluptates reprehenderit fugiat aperiam itaque cupiditate. Assumenda?</div>
+	</div>
+	<input type="text">
+	<input type="password">
+</body>
+</html>
