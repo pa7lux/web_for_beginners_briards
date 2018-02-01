@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calc</title>
+	<style>
+		.outer {
+			width: 80vw;
+			margin: auto;
+			height: 300px;
+			background-color: orange;
+		}
+
+		.inner {
+			height: 200px;
+			background-color: red;
+			width: calc(80vw - 120px);
+		}
+
+		.columns {
+			width: 90vw;
+			margin: 50px auto;
+			min-height: 500px;
+			background-color: lightblue;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.column {
+			height: 500px;
+			width: calc((100% - 40px)/3);
+			background-color: yellow;
+		}
+
+		.image {
+			background-image: url(image.jpg);
+			background-size: cover;
+			background-position: center;
+			padding-bottom: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<div class="inner"></div>
+	</div>
+	<div class="columns">
+		<div class="column">
+			<div class="image"></div>
+		</div>
+		<div class="column">
+			<div class="image"></div>
+		</div>
+		<div class="column">
+			<div class="image"></div>
+		</div>
+	</div>
+</body>
+</html>

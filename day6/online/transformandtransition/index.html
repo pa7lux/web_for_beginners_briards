@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transition & Transform</title>
+	<style>
+		.buy {
+			width: 200px;
+			height: 50px;
+			background-color: blue;
+			border: 2px solid orange;
+			color: white;
+			font-size: 1.5em;
+			cursor: pointer;
+			transition: all 2s ease-in 1s;
+		}
+		.buy:hover {
+			background-color: orange;
+			border: 2px solid blue;
+		}
+
+		.transform {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			transition: all 1s linear;
+			background-size: cover;
+			background-position: center;
+			margin: auto;
+		}
+
+		.rotate {
+			background-image: url(https://icdn.lenta.ru/images/2017/06/15/18/20170615185347779/detail_1c307ba3a77506e42c0e7063dc996e91.jpg);
+		}
+		.rotate:hover {
+			transform: rotate(360deg);
+			background-image: url(https://proufu.ru/upload/iblock/6c9/6c98c883bb6fe279ecc9c1be0872e7f0.jpg);
+		}
+
+		.translate {
+			background-color: black;
+		}
+
+		.translate:hover {
+			transform: translate(20px, 30px);
+		}
+		.scale {
+			background-color: orange;
+		}
+		.scale:active {
+			transform: scale(1.5, .8);
+		}
+		.skew {
+			border-radius: 0;
+			background-color: green;
+		}
+
+		.skew:hover {
+			transform: skew(20deg, 50deg);
+		}
+	</style>
+</head>
+<body>
+	<button class="buy">Купить</button>
+	<div class="transform rotate"></div>
+	<div class="transform translate"></div>
+	<div class="transform scale"></div>
+	<div class="transform skew"></div>
+</body>
+</html>

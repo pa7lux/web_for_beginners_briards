@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Positioning</title>
+	<style>
+		.outer {
+			height: 600px;
+			border: 2px solid purple;
+		}
+		.inner {
+			width: 100px;
+			height: 100px;
+		}
+
+		.static .inner {
+			background-color: red;
+			position: static;
+		}
+		.relative .inner {
+			background-color: green;
+			position: relative;
+			top: 50px;
+			left: 30px;
+		}
+		.absolute {
+			position: relative;
+		}
+		.absolute .inner {
+			background-color: navy;
+			position: absolute;
+			right: 30px;
+			bottom: 50px;
+		}
+		.fixed .inner {
+			background-color: orange;
+			position: fixed;
+			right: 50px;
+			top: 200px;
+		}
+
+		.popup {
+			background-color: lightgrey;
+			width: 500px;
+			min-height: 300px;
+			box-sizing: border-box;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.popup textarea {
+			width: 80%;
+			height: 200px;
+			display: block;
+			margin: 20px auto;
+		}
+
+		.popup button {
+			width: 200px;
+			height: 50px;
+			background-color: navy;
+			color: white;
+			text-transform: uppercase;
+			display: block;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="outer static">
+		<div class="inner"></div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, nulla. Laboriosam repellat voluptatem eos quibusdam reprehenderit, tempore maxime molestiae soluta neque laudantium et officiis voluptatibus voluptas in quis, sit nemo.</p>
+	</div>
+	<div class="outer relative">
+		<div class="inner"></div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi doloremque, officiis rerum! Iusto distinctio ex exercitationem mollitia molestias dolore voluptate beatae dolorum, inventore voluptatem recusandae quisquam modi, at placeat. Ad.</p>
+	</div>
+	<div class="outer absolute">
+		<div class="inner"></div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quisquam aliquam, impedit ex! Amet harum iure cumque quidem eos blanditiis sint adipisci exercitationem nobis consequuntur nemo, soluta voluptate odio quod.</p>
+		<div class="popup">
+			<textarea>Ваше сообщение</textarea>
+			<button>Отправить</button>
+		</div>
+	</div>
+	<div class="outer fixed">
+		<div class="inner"></div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla aliquid dolore suscipit quam rem, odio necessitatibus quos ipsum, rerum iure ad dolorum. Eligendi, molestiae, error! Itaque architecto harum dicta hic.</p>
+	</div>
+</body>
+</html>
