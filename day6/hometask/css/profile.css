@@ -1,0 +1,51 @@
+@import url(reset.css);
+
+.card-container {
+	width: 500px;
+	box-sizing: border-box;
+	border: 2px solid navy;
+	padding: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-row.first {
+	height: 250px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.image {
+	width: 250px;
+	height: 250px;
+	background-image: url(../img/profile.jpg);
+	background-size: cover;
+	background-position: center;
+	transition: transform linear .2s;
+}
+
+.image:hover {
+	transform: scale(1.05, 1.05);
+}
+
+.bio {
+	width: 220px;
+}
+
+.bio h1 {
+	font-size: 1.3em;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+
+.bio p {
+	font-style: italic;
+}
+
+.card-row.second h2 {
+	font-size: 1.3em;
+	font-weight: bold;
+	line-height: 2em;
+}
+.card-row.second p {
+	font-style: italic;
+}
