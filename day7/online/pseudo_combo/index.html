@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pseudo and usual selectors combo</title>
+	<style>
+		.flag {
+			height: 600px;
+			width: 800px;
+		}
+		.line {
+			height: 200px;
+		}
+
+		.line.top {
+			background-color: red;
+		}
+		.line.middle {
+			background-color: green;
+		}
+		.line.bottom {
+			background-color: yellow;
+		}
+
+		.flag:hover .line.top {
+			background-color: yellow;
+		}
+
+		.flag:hover .line.bottom {
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="flag">
+		<div class="line top"></div>
+		<div class="line middle"></div>
+		<div class="line bottom"></div>
+	</div>
+</body>
+</html>

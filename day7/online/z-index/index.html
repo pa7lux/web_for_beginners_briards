@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Z-index</title>
+	<style>
+		.parent {
+			width: 1000px;
+			height: 500px;
+			background-color: lightgrey;
+			position: relative;
+		}
+		.inner {
+			width: 200px;
+			height: 200px;
+			position: absolute;
+		}
+
+		.inner.first {
+			bottom: 0;
+			right: 0;
+			background-color: red;
+
+		}
+		.inner.second {
+			bottom: 20px;
+			right: 0;
+			background-color: blue;
+			z-index: -1;
+		}
+		.inner.third {
+			bottom: 40px;
+			right: 0;
+			background-color: green;
+			z-index: 2;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="inner first"></div>
+		<div class="inner second"></div>
+		<div class="inner third"></div>
+	</div>	
+</body>
+</html>
