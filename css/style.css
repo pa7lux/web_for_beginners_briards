@@ -1,0 +1,156 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Podkova');
+@keyframes logoHide {
+	0% {opacity: 0;},
+	100% {opacity: 1;}
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Podkova', serif;
+}
+
+h1 {
+	font-size: 5em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+li {
+	margin-left: 40px;
+	line-height: 1.5em;
+	list-style: square;
+}
+
+a {
+	color: grey;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: yellow;
+	color: blue;
+}
+
+.mainHeader {
+	background-color: blue;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo a:hover {
+	background-color: transparent;
+}
+
+.logo-image {
+	height: 80px;
+	margin-left: 20px;
+	animation: logoHide 1s linear infinite alternate;
+}
+
+.mainMenu {
+	margin-right: 20px;
+	width: 20%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.mainMenu a {
+	color: white;
+	text-decoration: none;
+}
+
+.mainMenu a:hover {
+	transform: scale(1.05);
+	background-color: transparent;
+}
+
+.courseName {
+	height: 500px;
+	background-image: url(../img/coding.jpg);
+	color: white;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+}
+
+.courseName h1 {
+	margin: auto;
+	text-transform: uppercase;
+	text-shadow: 0 0 5px black;
+	border-radius: 5px;
+	padding: 0 5px;
+	text-align: center;
+}
+
+.content {
+	width: 80%;
+	margin: 40px auto;
+	box-sizing: border-box;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.levelCard {
+	width: calc((100% - 40px)/2);
+	box-shadow: 0 0 5px black;
+	box-sizing: border-box;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.levelCard ol, .levelCard ul {
+	margin-top: 20px;
+}
+
+.mainFooter {
+	background-color: blue;
+	height: 100px;
+	color: white;
+	display: flex;
+	align-items: center;
+}
+
+.mainFooter p {
+	margin-left: 20px;
+}
+
+.mainFooter a {
+	color: white;
+}
+
+.mainFooter a:hover {
+	color: blue;
+}
+
+@media screen and (max-width: 1024px) {
+	.mainMenu {
+		flex-direction: column;
+	}
+
+	.mainMenu a {
+		line-height: 2em;
+	}
+	.content {
+		width: 90%;
+		flex-direction: column;
+	}
+	.levelCard {
+		width: 100%;
+	}
+	.levelCard {
+		margin-top: 20px;
+		width: 100%;
+	}
+	.levelCard:first-of-type {
+		margin-top: 0;
+		width: 100%;
+	}
+}
