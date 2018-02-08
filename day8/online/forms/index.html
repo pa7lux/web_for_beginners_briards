@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.myForm {
+			width: 500px;
+			margin: auto;
+		}
+		input, label, select, textarea {
+			display: block;
+		}
+
+		input[type="submit"] {
+			width: 100px;
+			height: 30px;
+			background-color: black;
+			color: white;
+		}
+		input[type="submit"]:hover {
+			background-color: lightgrey;
+			color: black;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="page">
+		<form method="POST" action="http://plus.allforms.mailjol.net/u/9b29fa1e.php" class="myForm">
+			<fieldset class='simpleInputs'>
+				<label for="custumer-name">ФИО</label>
+				<input name='custumer-name' type="text" placeholder="Василий Иванов">
+				<label for="custumer-email">E-mail</label>
+				<input type="email" name='custumer-email' value="yo@example.com">
+				<label for="password">E-mail</label>
+				<input type="password">
+				<label for="customer-birthDate">Дата рождения</label>
+				<input type="date" name="customer-birthDate">
+			</fieldset>
+			<fieldset>
+				<label for="goal">Цель обращения</label>
+				<select name="goal">
+					<option value="badLuck">Жалоба</option>
+					<option value="goodLuck">Похвала</option>
+				</select>
+				<label for="wereYouHere">Вы бывали тут раньше?</label>
+				<input type="radio" name='wereYouHere' checked value="yes"> <span>Да</span>
+				<input type="radio" name='wereYouHere' value="no"> <span>Нет</span>
+				<input type="checkbox" checked name='agree' value='agreed'>
+				<label for="agree">Принимаете условия</label>
+			</fieldset>
+			<fieldset>
+				<textarea name="message">Введите ваше сообщение</textarea>
+				<input type="submit">
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

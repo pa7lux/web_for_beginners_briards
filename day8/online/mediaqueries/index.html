@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mediaqueries</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.header {
+			min-height: 80px;
+			background-color: black;
+			color: white;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.header h1 {
+			margin-left: 20px;
+		}
+
+		.mobile {
+			width: 50px;
+			height: 50px;
+			background-image: url(menu.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			margin-right: 20px;
+		}
+
+		.desktopMenu {
+			display: none;
+		}
+
+		.desktopMenu a {
+			color: white;
+			display: block;
+		}
+
+		.content-container {
+			/*width: 60%;
+			height: 600px;
+			border: 1px solid black;
+			overflow: scroll; hidden */
+		}
+
+		.columns {
+			width: 90%;
+			min-height: 30vh;
+			margin: 10px auto;
+			box-shadow: 0 0 5px grey;
+			border-radius: 5px;
+		}
+
+
+
+		@media screen and (min-width: 600px) {
+			/* small tablets */
+		}
+		@media screen and (min-width: 960px) {
+			/*tablets*/
+			.desktopMenu {
+				display: block;
+			}
+			.mobile {
+				display: none;
+			}
+		}
+		@media screen and (min-width: 1264px) {
+			/*laptop*/
+			.content-container {
+				display: flex;
+				justify-content: space-around;
+			}
+			.columns {
+				width: 30vw;
+			}
+
+		}
+		@media screen and (min-width: 1904px) {
+			/* hd */
+		}
+	</style>
+</head>
+<body>
+	<div class="page">
+		<header class="header">
+			<div class="logo">
+				<h1>My Cool Company</h1>
+			</div>
+			<nav class="menu">
+				<div class="mobile"></div>
+				<div class="desktopMenu">
+					<a href="#">Cool Link</a>
+					<a href="#">Cool Link</a>
+					<a href="#">Cool Link</a>
+				</div>
+			</nav>
+		</header>
+		<main class="content">
+			<section class="content-container">
+				<div class="columns"></div>
+				<div class="columns"></div>
+				<div class="columns"></div>
+			</section>
+		</main>
+	</div>
+</body>
+</html>
