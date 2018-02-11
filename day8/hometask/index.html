@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="page">
+		<form method="POST" action="http://plus.allforms.mailjol.net/u/9b29fa1e.php" class="myForm">
+			<fieldset class='simpleInputs'>
+				<label for="custumer-name">ФИО</label>
+				<input name='custumer-name' type="text" placeholder="Василий Иванов">
+				<label for="custumer-email">E-mail</label>
+				<input type="email" name='custumer-email' placeholder="yo@example.com">
+				<label for="password">Пароль</label>
+				<input type="password">
+				<label for="customer-birthDate">Дата рождения</label>
+				<input type="date" name="customer-birthDate">
+				<label for="goal">Цель обращения</label>
+				<select name="goal">
+					<option value="badLuck">Жалоба</option>
+					<option value="goodLuck">Похвала</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				
+				<label for="wereYouHere">Вы бывали тут раньше?</label>
+				<input type="radio" name='wereYouHere' checked value="yes"> <span>Да</span>
+				<div class="clear"></div>
+				<input type="radio" name='wereYouHere' value="no"> <span>Нет</span>
+				<div class="clear"></div>
+				<textarea name="message" placeholder="Ваше сообщение"></textarea>
+				<input type="checkbox" checked name='agree' value='agreed'>
+				<label for="agree">Принимаете условия</label>
+				<div class="clear"></div>
+				<input type="submit">
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

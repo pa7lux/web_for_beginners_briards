@@ -1,0 +1,94 @@
+@import url(reset.css);
+.page {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+}
+
+.clear {
+	clear: both;
+}
+
+.myForm {
+	width: 90%;
+	margin: auto;
+	box-sizing: border-box;
+	padding: 20px 0;
+}
+input, label, select, textarea {
+	display: block;
+	width: 100%;
+	border: 0;
+
+}
+
+input, select {
+	height: 30px;
+	box-shadow: 0 0 5px lightgrey;
+	font-size: 1.1em;
+}
+
+input:focus, select:focus, textarea:focus {
+	outline: none;
+}
+
+
+textarea {
+
+	height: 200px;
+	box-shadow: 0 0 5px lightgrey;
+	font-size: 1.1em;
+}
+
+label {
+	font-size: 1.5em;
+	line-height: 1.8em;
+}
+
+label[for="agree"] {
+	font-size: 1em;
+	line-height: 40px;
+}
+
+input[type='radio'] {
+	width: 20px;
+	float: left;
+	box-shadow: none;
+}
+input[type='checkbox'] {
+	width: 20px;
+	float: left;
+	box-shadow: none;
+
+}
+
+input[type="submit"] {
+	width: 100%;
+	height: 50px;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+span {
+	line-height: 40px;
+}
+
+input[type="submit"]:hover {
+	background-color: lightgrey;
+	color: black;
+}
+
+@media screen and (min-width: 812px) {
+	.myForm {
+		display: flex;
+		justify-content: space-between;
+	}
+	fieldset {
+		width: 49%;
+	}
+	textarea {
+		height: 155px;
+	}
+	input[type="submit"] {
+		width: 50%;
+	}
+}
