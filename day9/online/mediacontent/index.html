@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Media content</title>
+	<style>
+		.header {
+			height: 500px;
+			background-color: blue;
+			position: relative;
+			overflow: hidden;
+		}
+		video {
+			width: 100vw;
+			position: relative;
+			top: -60px;
+		}
+		h1 {
+			color: white;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+</head>
+<body>
+	<div class="page">
+		<header class="header">
+			<video src="videoplayback.mp4" autoplay loop poster='poster.jpg' muted></video>
+			<h1>My website about bears</h1>
+		</header>
+		<div class="audioZone">
+			<audio src="son.mp3" controls loop autoplay></audio>
+		</div>
+	</div>
+</body>
+</html>
