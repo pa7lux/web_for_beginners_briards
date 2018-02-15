@@ -1,0 +1,12 @@
+$mainColor: red;
+
+header {
+	height: 100px;
+	background-color: $mainColor;
+}
+
+section  {
+	p {
+		color: $mainColor;
+	}
+}
